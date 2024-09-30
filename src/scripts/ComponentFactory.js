@@ -1,5 +1,7 @@
 import Header from './components/Header';
 import Icons from './utils/Icons';
+import Scrolly from './components/Scrolly';
+import InfoProjet from './components/InfoProjet';
 
 export default class ComponentFactory {
   constructor() {
@@ -7,6 +9,8 @@ export default class ComponentFactory {
     this.componentList = {
       Header,
       Icons,
+      Scrolly,
+      InfoProjet
 
     };
     this.init();
