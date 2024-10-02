@@ -1,4 +1,7 @@
 .footer{
+    margin-top: calc(var(--header-height)*-1) ;
+    background-color: var(--color-bg-primary);
+
     .footer__flex{
         display: flex;
         flex-direction: column;
