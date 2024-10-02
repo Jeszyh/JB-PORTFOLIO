@@ -35,9 +35,12 @@
 @import 'components/projets.scss';
 @import 'components/about.scss';
 @import 'components/contact.scss';
+@import 'components/form.scss';
+@import 'components/scrolly.scss';
 
 
 // UTILITIES
 // Utilitaires et classes auxiliaires avec possibilité de remplacer tout ce qui précède, par exemple masquer les éléments de la page
 @import 'utilities/accessibility';
 @import 'utilities/spacing';
+// @import 'utilities/layout';

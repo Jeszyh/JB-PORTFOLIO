@@ -1,0 +1,8 @@
+.section{
+    height: 100vh;
+    background-image: var(--texture-bg);
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: calc(var(--header-height)*-1);
+}
