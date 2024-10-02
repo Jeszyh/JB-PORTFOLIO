@@ -1,7 +1,9 @@
 import Header from './components/Header';
 import Icons from './utils/Icons';
 import Scrolly from './components/Scrolly';
+// import Lottie from './components/Lottie';
 import InfoProjet from './components/InfoProjet';
+
 
 export default class ComponentFactory {
   constructor() {
@@ -10,6 +12,7 @@ export default class ComponentFactory {
       Header,
       Icons,
       Scrolly,
+      // Lottie,
       InfoProjet
 
     };

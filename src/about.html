@@ -4,16 +4,24 @@
     <div class="wrapper flex">
         <div class="hero__content">
             <h1>Jessika Babeux-Hurst</h1>
-            <span class="subtitle">Developpement Web</span>
+            <h2 class="subtitle">Developpement Web</h2>
             <p>
-                Future diplomée en <span>Technique d’Intégration Multimédia</span> du cégep Édouard-Montpetit qui recherche un stage en <span>intégration web</span>.
+                Future diplomée en <span>Techniques d’Intégration Multimédia</span> du cégep Édouard-Montpetit qui recherche un stage en <span>intégration web</span>.
             </p>
             <div class="link__content">
                 <a href="#" class="button">Voir mes projets</a>
                 <div class="social">
-                    <a class="github" href=""><img src="" alt="Icone de Github"></a>
-                    <a class="codepen" href=""><img src="" alt="Icone de CodePen"></a>
-                    <a class="linkedin" href=""><img src="" alt="Icone de LinkedIn"></a> 
+                    <a class="github" href="">                                
+                        <svg class="icon icon--lg">
+                            <use xlink:href="#icon-github"></use>
+                        </svg>
+                    </a>
+                    <!-- <a class="codepen" href=""><img src="" alt="Icone de CodePen"></a> -->
+                    <a class="linkedin" href="">
+                        <svg class="icon icon--md">
+                            <use xlink:href="#icon-linkedin"></use>
+                        </svg>
+                    </a> 
                 </div>
             </div>
         </div>            
@@ -25,12 +33,78 @@
     </div>
 </section>
 <section class="skills">
-    <div>
-
+    <div class="skills__titre">
+        <div class="wrapper">
+            <h2>Mes compétences</h2>    
+        </div>
     </div>
+    
+    <div class="deco" data-scrolly="scaleDeco"></div>
+    <div class="deco__keyboard " data-scrolly="decoKeyboard"></div>
+    <div class="wrapper">
+        <div class="deco__keyboard " data-scrolly="DecoKeyboard"></div>
+        <div class="skills__content" data-scrolly="opacityKeyboard">
+            <h4 class="key">css</h4>
+            <h4 class="key key--md key--hidden">html</h4>
+            <h4 class="key key--hidden">figma</h4>
+            <h4 class="key">css</h4>
+            <h4 class="key key--sm">html</h4>
+            <h4 class="key key--hidden">figma</h4>
+            <h4 class="key">html</h4>
+            <h4 class="key key--hidden">figma</h4>
+            <h4 class="key key--md">figma</h4>
+            <h4 class="key key--hidden">figma</h4>
+            <h4 class="key key--hidden">js</h4>
+            <h4 class="key">sass</h4>
+            <h4 class="key">swiper</h4>
+            <h4 class="key">blender</h4>
+            <h4 class="key">blender</h4>
+            <h4 class="key key--sm">html</h4>
+            <h4 class="key key--hidden">css</h4>
+            <h4 class="key">blender</h4>
+            <h4 class="key key--sm">figma</h4>
+            <h4 class="key key--hidden">css</h4>
+            <h4 class="key">3d</h4>
+            <h4 class="key key--sm">figma</h4>
+            <h4 class="key key--hidden">figma</h4>
+            <h4 class="key key--sm key--hidden">figma</h4>
+            <h4 class="key key--hidden">css</h4>
+            <h4 class="key key--lg">visual studio code</h4>
+            <h4 class="key">blender</h4>
+            <h4 class="key">css</h4>
+            <h4 class="key">css</h4>
+        </div>
+    </div>
+    
 </section>
+<section class="interets">
+    <div class="wrapper">
+        <h2>interêts</h2>
+        <div class="lottie">
+            <div class="interet interet--astro">
+                
+            </div>
+            <div class="interet interet--chat">
+                <lottie-interactive class="lottie-chat" path="../assets/lotties/lottie-chat.json" interaction="hover"aspect-ratio="xMaxYMax"></lottie-interactive>
+                
+                    </lottie-interactive>
+                </div>
+                
+                <div class="interet interet--livres">
+                    <!-- <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script><dotlottie-player src="https://lottie.host/6eeb864a-8610-4173-bcbd-822f980541ab/BSVIb5MfiA.json" background="transparent" speed="1" style="width: 300px; height: 300px" direction="1" playMode="normal" loop hover></dotlottie-player> -->
+                </div>
+                <div class="interet interet--film">
+                    
+                </div>
+                <div class="interet interet--game">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
 
+    
 
-
-
+    
+    
 {% include '_partials/_footer.html' %}
