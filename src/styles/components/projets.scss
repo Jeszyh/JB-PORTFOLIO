@@ -9,13 +9,33 @@
         top: calc(var(--header-height)*-1);
         left: 0;
         bottom: 0;
-        margin-bottom: 150px;
+        margin-bottom: 110px;
         
         h1{color: var(--color-bg-primary);}
 
     }
+    .deco{
+        background-color: var(--color-bg-primary);
+        width: 400px;
+        height: 40px;
+        position: relative;
+        top: -200px;
+        z-index: 3;
+        h2{
+            position: relative;
+            right: 0;
+            left: 450px;
+            color: var(--color-bg-primary);
+            align-content: center;
+            margin: 0;
+            height: 100%;
+        }
+    }
+
+
     .projet__section{
         height: 50vh;
+
     }
 
     .projet__card{
@@ -27,7 +47,7 @@
         background-color: var(--color-bg-secondary);
         border: 3px solid var(--color-bg-primary);
         padding: 20px;
-        height: 350px;
+        height: 450px;
         overflow: hidden;
         box-shadow: 0 8px 15px -2px rgba($color: black, $alpha: 0.7);
         img{
@@ -52,6 +72,7 @@
         .projet__content{
 
             margin-left: 30px;
+            color: va;
             h2{
                 margin-top: 10px;
                 color: var(--color-secondary);
@@ -61,33 +82,57 @@
         .projet__skill{
             display: flex;
             flex-direction: column;
-            align-items: start;
+            align-items: center;
             justify-content: center;
 
             div{
-                width: 40px;
+                width: 100%;
                 height: 40px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 margin: 20px;
+                
             }
 
         p{
             text-align: center;
             width: 100%;
             margin: 0;
+            text-transform: uppercase;
+            font-weight:600;
+            color: var(--color-bg-primary);
         }
         }
     }
     .projet__section:nth-child(odd){
         background: var(--texture-bg);
-        height: 50vh;
+        height: 75vh;
+
+        .deco{
+            background-color: var(--color-bg-secondary);
+            width: 400px;
+            height: 40px;
+            position: relative;
+            top: -200px;
+            z-index: 3;
+            h2{
+                width: 100%;
+                position: relative;
+                left: 0;
+                right:0;
+                color: var(--color-bg-secondary);
+                align-content: center;
+                margin: 0;
+                height: 100%;
+            }
+        }
+
     }
     .projet__section:nth-child(even){
         background: var(--color-bg-primary);
-        height: 50vh;
+        height: 75vh;
         .projet__card{
             background-color: var(--color-bg-primary);
             border: 3px solid var(--color-primary);
@@ -105,7 +150,21 @@
             h2{
                 color: var(--color-bg-secondary);
             }
+
+            .projet__skill{
+                align-content: center;
+                p{
+                    color: var(--color-bg-secondary);
+                    text-align: center;
+                    
+                }
+            }
+           
         
+        }
+        svg {
+            fill: var(--color-bg-secondary);
+            stroke: none;
         }
     }
     .projet__section:last-child{
