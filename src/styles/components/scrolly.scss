@@ -56,6 +56,14 @@
             transition-delay: 2s;
         }
     }
+    [data-scrolly='text'] {
+        transform: translateX(-10%);
+
+        &.is-active {
+            transform: translateX(50%);
+        }
+        transition: transform .3s ease-out 1.2s;
+    }
     
     
     

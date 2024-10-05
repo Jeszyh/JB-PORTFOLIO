@@ -9,7 +9,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 2rem 5%;
-    margin-bottom: 2rem;
+    // margin-bottom: 2rem;
 
     position: sticky;
     top: 0;
@@ -200,7 +200,7 @@
     }
 }
 .nav-primary__item {
-    font-size: var(--font-size-h3);
+    font-size: var(--font-size-content);
     font-weight: bolder;
     color: var(--color-white);
     text-transform: uppercase;
@@ -213,7 +213,7 @@
     z-index: 1;
 
     @media screen and (min-width: $breakpoint-md) {
-        font-size: var(--font-size-h3);
+        font-size: var(--font-size-content);
         color: var(--color-white);
         padding: 0 20px;
         position: relative;

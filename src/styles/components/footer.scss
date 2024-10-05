@@ -1,6 +1,7 @@
 .footer{
-    margin-top: calc(var(--header-height)*-1) ;
+    // margin-top: calc(var(--header-height)*-1) ;
     background-color: var(--color-bg-primary);
+    z-index: 1;
 
     .footer__flex{
         display: flex;
