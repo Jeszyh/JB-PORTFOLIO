@@ -1,14 +1,16 @@
 {% include '_partials/_header.html' %}
-<section class="hero contact">
-    <div class="wrapper flex">
-        <div class="hero__content">
+<section class="section contact">
+    <div class="wrapper">
+        <div class="grid">
+            <div class="section__content">
+                <div class="hero__text">
             <h1>Jessika Babeux-Hurst</h1>
             <h2 class="subtitle">Developpement Web</h2>
             <p>
                 Future diplomée en <span>Techniques d’Intégration Multimédia</span> du cégep Édouard-Montpetit qui recherche un stage en <span>intégration web</span>.
             </p>
             <div class="link__content">
-                <a href="#" class="button">Voir mes projets</a>
+                <a href="projets.html" class="button">Voir mes projets</a>
                 <div class="social">
                     <a class="github" href="">                                
                         <svg class="icon icon--lg">
@@ -23,14 +25,79 @@
                     </a> 
                 </div>
             </div>
-        </div>            
-        <div class="frame__content">
-            <div class="frame frame--front">
+                </div>            
             </div>
-            <div class="frame frame--back"></div>
+            <div class="frame__content__contact">
+            <div class="frame__contact frame--front__contact">
+            </div>
+            <div class="frame__contact frame--back__contact"></div>
+            </div>
+        
+    <div class="contact__content">          
+       
+        <h1>Formulaire de contact</h1>
+
+
+        <!-- Le formulaire ira ici -->
+        <form action="" class="form" autocomplete="off" data-component="Form">
+            <div class="form__body">
+                <fieldset class="grid">
+                    <div class="input">
+                        <label class="input__label" for="fullname">Nom</label>
+                        <input class="input__element" type="text" name="fullname" id="fullname" placeholder="Votre nom" required />
+                    </div>
+                    <div class="input">
+                        <label class="input__label" for="email">Couriel</label>
+                        <input class="input__element" type="email" name="email" id="email" placeholder="ex: votreemail@hotmail.com" required />
+                    </div>
+                    <!-- <div class="input">
+                        <label class="input__label" for="phone">Téléphone</label>
+                        <input class="input__element" type="tel" name="phone" id="phone" placeholder="ex.: 123-456-7890" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$" required />
+                    </div> -->
+                    <!-- <div class="input select">
+                        <label class="input__label" for="province">Province</label>
+                        <select name="province" id="province" class="input__element" required>
+                            <option value="" hidden>Choisir une province</option>
+                            <option value="qc">Québec</option>
+                            <option value="on">Ontario</option>
+                            <option value="al">Alberta</option>
+                        </select>
+                    </div> -->
+                    <div class="input textarea u-grid-fullwidth">
+                        <label class="input__label" for="comment">Message</label>
+                        <textarea name="comment" id="comment" class="input__element" required></textarea>
+                    </div>
+                    <!-- <div class="input checkbox">
+                        <input class="input__element" type="checkbox" name="optin[]" id="optin" value="true" />
+                        <label class="input__label" for="optin">Je veux être informé des prochaines actions...</label>
+                    </div> -->
+                </fieldset>
+                <!-- <fieldset>
+                    <h2>Les essences</h2>
+                    <p>L'arbre que tu aimerais sauver le plus?</p>
+                    <div class="form__list" data-input-container>
+                        <div class="input radio">
+                            <input class="input__element" type="radio" name="tree[]" id="tree1" value="sapin beaumier" required />
+                            <label class="input__label" for="tree1">Le sapin beaumier</label>
+                        </div>
+                        <div class="input radio">
+                            <input class="input__element" type="radio" name="tree[]" id="tree2" value="epinette noire" required />
+                            <label class="input__label" for="tree2">L'épinette noire'</label>
+                        </div>
+                    </div>
+                </fieldset> -->
+                <footer class="form__footer">
+                    <button class="button">Envoyer</button>
+                </footer>
+            </div>
+            <div class="form__confirmation">
+                <h2>Merci</h2>
+                <p>Votre message a bien été envoyé</p>
+            </div>
+        </form>
+            </div>
         </div>
     </div>
-
 </section>
 
 {% include '_partials/_footer.html' %}

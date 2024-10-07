@@ -28,6 +28,9 @@
 // COMPONENTS
 // Composants d'interface utilisateur spécifiques.
 // C’est là que la majorité de notre travail a lieu.
+@import '../../node_modules/swiper/swiper.scss';
+@import '../../node_modules/swiper/modules/pagination/pagination.scss';
+@import '../../node_modules/swiper/modules/scrollbar/scrollbar.scss';
 @import 'components/icons.scss';
 @import 'components/section.scss';
 @import 'components/header.scss';
@@ -39,6 +42,8 @@
 @import 'components/contact.scss';
 @import 'components/form.scss';
 @import 'components/scrolly.scss';
+@import 'components/modal.scss';
+@import 'components/404.scss';
 
 
 // UTILITIES

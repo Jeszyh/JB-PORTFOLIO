@@ -1,0 +1,126 @@
+        .not__found {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+            padding: 20px;
+            background-image: var(--texture-bg);
+
+            
+            &__content {
+                text-align: center;
+                z-index: 2;
+                h1 {
+                    font-size: 10rem;
+                    color: var(--color-secondary);
+                    text-shadow: 4px 4px var(--color-accent);
+                }
+        
+                p {
+                    font-size: var(--font-size-content);
+                    color: var(--color-secondary);
+                }
+        
+                .btn {
+                    display: inline-block;
+                    padding: 10px 20px;
+                    background-color: var(--color-accent);
+                    color: var(--color-primary);
+                    text-decoration: none;
+                    font-weight: bold;
+                    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+                    margin-top: 20px;
+                    transition: background-color 0.3s ease;
+                }
+        
+                .btn:hover {
+                    background-color: #a68013;
+                }
+            }
+            
+
+
+
+        }
+
+
+
+        .cards {
+            position: absolute;
+            top: 25%;
+            right: 5%;
+            display: flex;
+            flex-wrap: wrap;
+            width: 600px;
+            height: 650px;
+            z-index: 1;
+        }
+
+        .card {
+            width: 200px;
+            height: 250px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            &:nth-child(odd) {
+                background-color: var(--color-accent-variant);
+                border: 5px solid var(--color-accent);
+            }
+            &:nth-child(even) {
+                background-color: var(--color-bg-primary);
+                border: 5px solid var(--color-bg-secondary);
+            }
+            &:nth-child(1) {
+                top: 0;
+                left: 0;
+;
+            }
+    
+            &:nth-child(2) {
+                top: 10%;
+                left: 25%;
+            }
+    
+            &:nth-child(6) {
+                top: 25%;
+                left: -5%;
+
+            }
+    
+            &:nth-child(4) {
+                top: 40%;
+                left: 30%;
+            }
+    
+            &:nth-child(5) {
+                top: 60%;
+                left: 10%;
+
+            }
+    
+            &:nth-child(3) {
+                top: 20%;
+                left: 50%;
+
+            }
+    
+            &:nth-child(7) {
+                top: 50%;
+                left: 60%;
+            }
+    
+            &:nth-child(8) {
+                top: 70%;
+                left: 40%;
+
+            }
+    
+            &:nth-child(9) {
+                top: 85%;
+                left: 15%;
+            }
+        }
+
+

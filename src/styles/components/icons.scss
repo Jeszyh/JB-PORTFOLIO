@@ -13,8 +13,8 @@
 }
 
 .icon--stroke {
-    fill: var(--color-black);
-    stroke: var(--color-black);
+    fill: var(--color-bg-primary);
+    stroke: var(--color-bg-primary);
 }
 
 .icon--xs {
@@ -28,18 +28,18 @@
 }
 
 .icon--md {
-    height: 1.8rem;
-    width: 1.8rem;
+    height: 1.6rem;
+    width: 1.6rem;
 }
 
 .icon--lg {
-    height: 2.3rem;
-    width: 2.3rem;
+    height: 2.1rem;
+    width: 2.1rem;
 }
 
 .icon--sl {
-    height: 5rem;
-    width: 5rem;
+    height: 4rem;
+    width: 4rem;
 }
 
 .icon--xl {
@@ -61,4 +61,35 @@
         height: 50%;
         width: 50%;
     }
+}
+
+
+.linkedin, .github{
+    width: 30px;
+    height: 30px;
+    background-color: var(--color-bg-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 5px;  
+
+    svg{
+        fill:var(--color-primary);
+    }
+}
+
+.hero, .about {
+    .linkedin, .github{
+        background-color: var(--color-bg-secondary);
+    }
+}
+
+
+.github{
+    svg{
+        position: relative;
+        bottom: -4.5px;
+    }
+
 }

@@ -11,11 +11,11 @@
         bottom: 0;
         margin-bottom: 110px;
         
-        h1{color: var(--color-bg-primary);}
+        h1{color: var(--color-secondary);}
 
     }
     .deco{
-        background-color: var(--color-bg-primary);
+        background-color: var(--color-bg-secondary);
         width: 400px;
         height: 40px;
         position: relative;
@@ -25,7 +25,7 @@
             position: relative;
             right: 0;
             left: 450px;
-            color: var(--color-bg-primary);
+            color: var(--color-secondary);
             align-content: center;
             margin: 0;
             height: 100%;
@@ -44,8 +44,8 @@
         display: flex;
         flex-direction: row;
         align-items: start;
-        background-color: var(--color-bg-secondary);
-        border: 3px solid var(--color-bg-primary);
+        background-color: var(--color-bg-primary);
+        border: 3px solid var(--color-bg-secondary);
         padding: 20px;
         height: 450px;
         overflow: hidden;
@@ -77,6 +77,16 @@
                 margin-top: 10px;
                 color: var(--color-secondary);
             }
+            a{
+                text-decoration: none;
+            }
+            h3{
+                color: var(--color-bg-secondary);
+            }
+            p{
+                color: var(--color-bg-secondary);
+                text-wrap: pretty;
+            }
         }
 
         .projet__skill{
@@ -102,7 +112,7 @@
             margin: 0;
             text-transform: uppercase;
             font-weight:600;
-            color: var(--color-bg-primary);
+            color: var(--color-bg-secondary);
         }
         }
     }
@@ -111,7 +121,7 @@
         height: 75vh;
 
         .deco{
-            background-color: var(--color-bg-secondary);
+            background-color: var(--color-bg-primary);
             width: 400px;
             height: 40px;
             position: relative;
@@ -122,20 +132,26 @@
                 position: relative;
                 left: 0;
                 right:0;
-                color: var(--color-bg-secondary);
+                color: var(--color-secondary);
                 align-content: center;
                 margin: 0;
                 height: 100%;
             }
+
+        }
+        
+        svg {
+            fill: var(--color-bg-secondary);
+            stroke: none;
         }
 
     }
     .projet__section:nth-child(even){
-        background: var(--color-bg-primary);
+        background: var(--color-bg-secondary);
         height: 75vh;
         .projet__card{
-            background-color: var(--color-bg-primary);
-            border: 3px solid var(--color-primary);
+            background-color: var(--color-bg-secondary);
+            border: 3px solid var(--color-bg-primary);
             flex-direction: row-reverse;
 
             img{
@@ -148,13 +164,19 @@
                 }
             }
             h2{
-                color: var(--color-bg-secondary);
+                color: var(--color-bg-primary);
+            }
+            h3{
+                color: var(--color-bg-primary);
+            }
+            p{
+                color: var(--color-bg-primary);
             }
 
             .projet__skill{
                 align-content: center;
                 p{
-                    color: var(--color-bg-secondary);
+                    color: var(--color-bg-primary);
                     text-align: center;
                     
                 }
@@ -163,13 +185,14 @@
         
         }
         svg {
-            fill: var(--color-bg-secondary);
+            fill: var(--color-bg-primary);
             stroke: none;
         }
     }
     .projet__section:last-child{
-        background: none;
+        border-bottom: 5px solid var(--color-bg-primary);
         margin-bottom: 0;
+        height: 60vh;
         
     }
 }

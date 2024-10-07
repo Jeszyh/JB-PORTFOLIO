@@ -23,11 +23,29 @@
             transform: scaleX(1);
         }
     }
+    [data-scrolly='toRight'] {
+        opacity: 0;
+        transition: transform 1.5s ease-out;
+        transform: translateX(100%);
+
+        &.is-active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
     [data-scrolly='scaleDeco'] {
         width: 0;
 
         &.is-active {
             width: calc(50vw + 5px);
+            transition: all 1s ease-out;
+        }
+    }
+    [data-scrolly='scaleDecoSmall'] {
+        width: 0;
+
+        &.is-active {
+            width: calc(20vw + 5px);
             transition: all 1s ease-out;
         }
     }
@@ -60,11 +78,19 @@
         transform: translateX(-10%);
 
         &.is-active {
-            transform: translateX(50%);
+            transform: translateX(35%);
         }
         transition: transform .3s ease-out 1.2s;
     }
     
+    [data-scrolly='text_top'] {
+        transform: translateX(-10%);
+
+        &.is-active {
+            transform: translateX(53%);
+        }
+        transition: transform .3s ease-out 1.2s;
+    }
     
     
     

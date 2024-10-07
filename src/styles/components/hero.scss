@@ -18,6 +18,8 @@
     // background-image: var(--texture-bg);
     // margin-top:0 ;
 
+
+
     .hero__content{
         max-width: 45%;
         display: flex;
@@ -72,26 +74,28 @@
         width: 100%; 
         max-height: min-content;
         position: relative;
-        left: 100px;
+        left: 0;
 
 
 
     }
     .frame{
-        min-width: 55%;
+        // min-width: 55%;
+        width: 100%;
         max-width: 380px;
         height: 50vh;
         position: absolute;
-        top: 0;
-        left: 10vw;
-        right: 0;
-        bottom: 0;
+        top: 5vh;
+        left: 15vh;
+        
 
         &:first-child{
-            top: 2vh;
-            left: 12vw;
+            top: 10vh;
+            left: -10%;
             z-index: 1;
-            border: 20px solid var(--color-bg-primary);
+            border: 20px solid var(--color-bg-secondary);
+            background-image: url("/assets/images/jessika.svg");
+            background-size: cover;
             transition: transform 0.3s $ease-in-out-circ;
             transform: translate(0);
             animation: move-in linear;
@@ -99,9 +103,9 @@
 
         }
         &:last-child{
-            top: 20vh;
-            left: 0;
-            background-color: (var(--color-bg-secondary));
+            top: 8vh;
+            // left: 0;
+            background-color: (var(--color-bg-primary));
             border: 15px solid var(--color-accent);
         }
 
@@ -111,8 +115,8 @@
         //     }
         // }
         @keyframes move-in{
-            from{top: 2vh; left: 12vw;}
-            to{top: 5vh; left: 14vw;}
+            from{top: 4vh; left: -2vw;}
+            to{top: 8vh; left: 2vw;}
         }
     }
     

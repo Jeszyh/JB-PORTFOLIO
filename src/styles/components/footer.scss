@@ -1,6 +1,6 @@
 .footer{
     // margin-top: calc(var(--header-height)*-1) ;
-    background-color: var(--color-bg-primary);
+    background-color: var(--color-bg-secondary);
     z-index: 1;
 
     .footer__flex{
@@ -46,7 +46,7 @@
         a{
             width: 30px;
             height: 30px;
-            background-color: var(--color-bg-secondary);
+            background-color: var(--color-bg-primary);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -56,14 +56,14 @@
             &:nth-child(1){
             svg{
                 position: relative;
-                bottom: -4px;
+                bottom: -4.5px;
             }
             &:nth-last-child(1){
                 margin-right: 0;
             }
         }
         svg{
-            fill:var(--color-bg-primary);
+            fill:var(--color-bg-secondary);
             }   
         }
     }

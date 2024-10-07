@@ -1,42 +1,213 @@
 {% include '_partials/_header.html' %}
 
-<section class="hero projet">
-    <h1 class="span" data-scrolly="text">Timconf</h1>
+<section class="section hero projet">
+    <h1 class="span" data-scrolly="text" data-no-repeat="true">Timconf</h1>
     <div class="wrapper flex">
         <div class="hero__content">
             <h1>TimConf</h1>
             <h2 class="subtitle">Projet Scolaire</h2>
         </div>
-        <div class="flex-row">
+        <div class="projet__info__container">
             <div class="projet__info">
-                <h3>Intégration web</h3>
-                <div class="projet__tag">
-                    <h4>HTML</h4>
-                    <h4>CSS</h4>
-                    <h4>SASS</h4>
-                    <h4>JS</h4>
+              <h3>Intégration web</h3>
+              <div class="projet__tag">
+                <div class="projet__wrapper">
+                  <div class="projet__shadow"></div>
+                  <h4>HTML</h4>
                 </div>
-                <a href=""><button>Voir le site</button></a>
+                <div class="projet__wrapper">
+                  <div class="projet__shadow"></div>
+                  <h4>CSS</h4>
+                </div>
+                <div class="projet__wrapper">
+                  <div class="projet__shadow"></div>
+                  <h4>SASS</h4>
+                </div>
+                <div class="projet__wrapper">
+                  <div class="projet__shadow"></div>
+                  <h4>JS</h4>
+                </div>
+              </div>
+                         
+              <a class="button" href="https://timconf.netlify.app" target="_blank">Voir le site</a>
             </div>
-            <div class="media mockup">
-                <img src="assets/images/timconf.svg" alt="">
+            <div class="media mockup" data-scrolly="toRight">
+              <img src="assets/images/timconf.svg" alt="">
             </div>
-        </div>
+          </div>
     </div>
 </section>
 <section class="description">
-    <div class="wrapper flex">
+    <div class="deco" data-scrolly="scaleDeco"></div>
+    <div class="titre">
+        <h1>Description</h1>
+    </div>
+    <div class="wrapper grid">
         <div class="cards__container">
-            <div class="card">
+            <div class="card__info">
+                <div class="projet__shadow"></div>
                 <h4>Swiper</h4>
             </div>
-            <div class="card">
+            <div class="card__info">
+                <div class="projet__shadow"></div>
                 <h4>Display:Grid</h4>
             </div>
         </div>
         <div class="description__content">
-            <p></p>
+            <p><span>TimConf</span> est un site web réalisé dans le cadre du cours de <span>Conception Web III</span>. Le site, fictif, devait promouvoir des conférences en lien avec les métiers du multimédia.</p>
+            <p>Nous devions également nous positionner en tant que personne offrant une conférence.</p>
+            <p>Lors de ce projet, il fallait incorporer la composante <span>Header</span> et utiliser le <span>display:grid</span>, que nous venions d'apprendre en classe.</p>
+            <p>La composante <span>Header</span> permet au header de se cacher lors du scroll de la page</p>
+            <p>Crédit : Travail réalisé dans le cadre du cours de Conception Web III (Automne 2020) </p>
         </div>
     </div>
+</section>
+<section class="section timeline">
+    <div class="deco" data-scrolly="scaleDecoSmall"></div>
+    <div class="titre">
+        <h1>Processus</h1>
+    </div>
+    <div class="line"></div>
+     
+    <div class="wrapper grid">
+        <div class="timeline__info__top">
+            <div class="box">
+                <h3>Moodboard</h3>
+                <h3>Recherche</h3>
+                <h3>Documentation</h3>
+            </div>
+            <div class="box">
+                <h3>Components</h3>
+                <h3>JS</h3>
+            </div>
+                <div class="box">
+                <h3>Responsive</h3>
+                <h3>JS</h3>
+            </div>
+        </div>
+        <div class="timeline__info__bottom">
+            <div class="box">
+                <h3>Intégration</h3>
+                <h3>HTML</h3>
+                <h3>SASS</h3>
+                <h3>JS</h3>
+            </div>
+            <div class="box">
+                <h3>Responsive</h3>
+                <h3>HTML</h3>
+                <h3>SASS</h3>
+                <h3>JS</h3>
+            </div>
+                <div class="box">
+                <h3>Commenter</h3>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="specification">
+    <div class="deco" data-scrolly="scaleDeco"></div>
+    <div class="titre">
+        <h1>Spécificité</h1>
+    </div>
+    <div class="wrapper">
+        <div class="cards__container">
+            <div class="card__info" >
+                <div class="card__box">
+                    <div class="projet__shadow"></div>
+                    <h4>Header</h4>
+                </div>
+                <div class="gallery">
+                    <img src="assets/images/timconf_header_html.svg" alt="">
+                    <img src="assets/images/timconf_header_scss.svg" alt="">
+                    <img src="assets/images/timconf_header_js.svg" alt="">
+                </div>
+            </div>
+            <div class="card__info">
+                <div class="card__box">
+                    <div class="projet__shadow"></div>
+                    <h4>Display: Grid</h4>
+                </div>
+                <div class="gallery">
+                    <img src="assets/images/timconf_grid_html.svg" alt="">
+                    <img src="assets/images/timconf_grid_scss.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        
+    <!-- <div class="swiper-options">
+        <button class="button-chevron button-chevron-reverse swiper-button-prev">
+            <img src="assets/images/chevron.svg" alt="" />
+        </button>
+        <button class="button-chevron swiper-button-next">
+            <img src="assets/images/chevron.svg" alt="" />
+        </button>
+    </div> -->
+    <!-- <div class="modal" id="modal1">
+        <div class="modal-content">
+          <span class="close" id="close1">&times;</span>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="" alt="Image 1"></div>
+              <div class="swiper-slide"><img src="" alt="Image 2"></div>
+              <div class="swiper-slide"><img src="" alt="Image 3"></div>
+            </div>
+            
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modal2">
+        <div class="modal-content">
+          <span class="close" id="close2">&times;</span>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="" alt="Image 4"></div>
+              <div class="swiper-slide"><img src="" alt="Image 5"></div>
+              <div class="swiper-slide"><img src="" alt="Image 6"></div>
+            </div>
+            
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div> -->
+
+    </div>
+
+
+
+    <!-- <div class="swiper-container" data-component="Carousel">
+        <div class="wrapper">
+        <div class="swiper-wrapper">
+            <div
+                class="swiper-slide swiper-slide-secondary"
+                data-component="Modal"
+                data-modal-id="tpl-modal-tool"
+                data-modal-title="Une belle laitue"
+                data-modal-img=""
+                data-modal-bg="card--tertiary"
+            >
+                <div class="swiper-slide-content">
+                    <h3>Une belle laitue</h3>
+                    <img src="" alt="" />
+                </div>
+            </div>
+            <div
+                class="swiper-slide swiper-slide-tertiary"
+                data-component="Modal"
+                data-modal-id="tpl-modal-tool"
+                data-modal-title="De belles asperges"
+                data-modal-img=""
+            >
+                <div class="swiper-slide-content">
+                    <h3>De belles asperges</h3>
+                    <img src="" alt="Des asperges" />
+                </div>
+            </div>
+        </div> -->
 </section>
 {% include '_partials/_footer.html' %}

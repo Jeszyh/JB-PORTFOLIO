@@ -3,6 +3,8 @@ import Icons from './utils/Icons';
 import Scrolly from './components/Scrolly';
 // import Lottie from './components/Lottie';
 import InfoProjet from './components/InfoProjet';
+// import Carousel from './components/Carousel';
+// import Modal from './components/Modal';
 
 
 export default class ComponentFactory {
@@ -13,7 +15,9 @@ export default class ComponentFactory {
       Icons,
       Scrolly,
       // Lottie,
-      InfoProjet
+      InfoProjet,
+      // Carousel,
+      // Modal,
 
     };
     this.init();

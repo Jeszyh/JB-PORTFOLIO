@@ -25,7 +25,16 @@ const webpackConfig = {
   },
 
   module: {
-    rules: [],
+    rules: [
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader', // Inject les styles dans le DOM
+          'css-loader',   // Charge les fichiers CSS
+          'sass-loader'   // Compile le SCSS en CSS
+        ],
+      },
+    ],
   },
 
   plugins: [

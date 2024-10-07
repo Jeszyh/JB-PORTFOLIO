@@ -19,7 +19,7 @@
     transition: all .2s $ease-out-quad;
 
     &::before {
-        background-color: var(--color-bg-primary);
+        background-color: var(--color-bg-secondary);
         content: "";
         position: absolute;
         top: 0;
@@ -129,7 +129,7 @@
 
 .nav-primary{
     --width-nav : 80%;
-    background-color: var(--color-bg-primary);
+    background-color: var(--color-bg-secondary);
     position: absolute;
     top: var(--header-height);
     left: 0;
@@ -154,7 +154,7 @@
     }
 
     @media screen and (min-width: $breakpoint-md) {
-        background-color: var(--color-bg-primary);
+        background-color: var(--color-bg-secondary);
         top: 0;
         overflow: hidden;
         transform: none;
