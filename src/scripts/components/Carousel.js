@@ -1,29 +1,18 @@
-import Swiper, { Navigation, Pagination, Scrollbar } from 'swiper';
-import 'swiper/swiper.scss';
-import 'swiper/modules/navigation/navigation.scss';
-import 'swiper/modules/pagination/pagination.scss';
-import 'swiper/modules/scrollbar/scrollbar.scss';
+import Swiper from 'swiper/bundle';
 
-// Activer les modules
-Swiper.use([Navigation, Pagination, Scrollbar]);
 
 export default class Carousel {
+  /**
+   * Méthode constructeur
+   * @param {HTMLElement} element - Élément HTML sur lequel la composante est instanciée
+   */
   constructor(element) {
     this.element = element;
 
+    // Options par défaut pour la librairie Swiper
     this.defaultOptions = {
+      slidesPerView: 1,
       spaceBetween: 20,
-      loop: true,
-      breakpoints: {
-        320: { slidesPerView: 1 },
-        480: { slidesPerView: 2 },
-        768: { slidesPerView: 4 },
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-        disabledClass: 'my-button-disabled',
-      },
       pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
@@ -33,29 +22,30 @@ export default class Carousel {
     this.init();
   }
 
+  /**
+   * Méthode d'initialisation
+   */
   init() {
     let options = this.defaultOptions;
 
+    // Gestion des paramètres différents lorsqu'on veut avoir
+    // 2 slides visibles sur grand écran et une seule sur petit écran
     if (this.element.dataset.carousel == 'split') {
       options = {
         ...this.defaultOptions,
-        breakpoints: { 768: { slidesPerView: 2 } },
-      };
-    }
-
-    if (this.element.dataset.carousel == 'scroll') {
-      options = {
-        ...this.defaultOptions,
-        scrollbar: {
-          el: '.swiper-scrollbar',
-          draggable: true,
-          hide: false,
+        ...{
+          slidesPerView: 1,
+          breakpoints: {
+            768: {
+              slidesPerView: 1,
+            },
+          },
         },
-        navigation: false,
-        pagination: false,
       };
     }
 
+    // Instanciation d'un nouveau Swiper avec les options
     new Swiper(this.element, options);
   }
 }
+

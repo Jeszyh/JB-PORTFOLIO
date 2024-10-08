@@ -32,7 +32,7 @@
               <a class="button" href="https://timconf.netlify.app" target="_blank">Voir le site</a>
             </div>
             <div class="media mockup" data-scrolly="toRight">
-              <img src="assets/images/timconf.svg" alt="">
+              <img src="assets/images/timconf.svg" alt="" style="width: 100px; height: auto;">
             </div>
           </div>
     </div>
@@ -113,24 +113,46 @@
         <div class="cards__container">
             <div class="card__info" >
                 <div class="card__box">
-                    <div class="projet__shadow"></div>
-                    <h4>Header</h4>
+                    <div class="card__box__wrapper">
+                        <h4>Header</h4>
+                        <div class="projet__shadow"></div>
+                    </div>
                 </div>
-                <div class="gallery">
-                    <img src="assets/images/timconf_header_html.svg" alt="">
-                    <img src="assets/images/timconf_header_scss.svg" alt="">
-                    <img src="assets/images/timconf_header_js.svg" alt="">
-                </div>
+                <div class="swiper carousel" data-component="Carousel" data-carousel="split">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide carousel__slide gallery"><img src="assets/images/timconf_header_html.svg" alt=""></div>
+                      <div class="swiper-slide carousel__slide gallery"><img src="assets/images/timconf_header_scss.svg" alt=""></div>
+                      <div class="swiper-slide carousel__slide gallery"><img src="assets/images/timconf_header_js.svg" alt=""></div>
+                      ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                  </div>
             </div>
+
+
+
             <div class="card__info">
                 <div class="card__box">
                     <div class="projet__shadow"></div>
                     <h4>Display: Grid</h4>
                 </div>
-                <div class="gallery">
-                    <img src="assets/images/timconf_grid_html.svg" alt="">
-                    <img src="assets/images/timconf_grid_scss.svg" alt="">
-                </div>
+                <div class="swiper carousel" data-component="Carousel" data-carousel="split">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide carousel__slide gallery"><img src="assets/images/timconf_grid_html.svg" alt=""></div>
+                      <div class="swiper-slide carousel__slide gallery"><img src="assets/images/timconf_grid_scss.svg" alt=""></div>
+                      
+                    </div>
+                    <!-- If we need pagination -->
+                    
+                    
+                    <div class="swiper-pagination bullet"></div>
+                  </div>
+
             </div>
         </div>
 

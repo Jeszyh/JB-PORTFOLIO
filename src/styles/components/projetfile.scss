@@ -270,28 +270,27 @@
 
     background-color: var(--color-bg-secondary);
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     height: 100vh;
     border-bottom: 5px solid var(--color-bg-primary);
     position: relative;
 
-    .wrapper{
-        
-        
-    }
+
     .deco{
         position: absolute;
         width: 100%;
         height: var(--font-size-h1);
         background-color: var(--color-bg-primary);
         top: 100px;
+        left: 0;
     }
     .titre{
         position: absolute;
         height: 40px;
         top: 100px;
         right: 25%;
+         
         
 
         h1{
@@ -303,64 +302,98 @@
     
     .cards__container {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
-        gap: 50px;
-        margin-left: -75%;
-        margin-top: 20%;
+        gap: 20%;
+      
         
-
         .card__info {
-
             display: flex;
+            flex-direction: column;
             gap: 50px;
-            .gallery{
-                
-                height: 250px;
-                width: 250px;
-                display: flex;
-                gap: 10px;
-                img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    object-position: 0;
-                }
-            }
-            
-            .card__box{
-                position: relative; 
-                display: inline-block;
-                
-            }
 
 
-            .projet__shadow {
-                position: absolute;
-                top: -10px; 
-                left: -10px; 
-                width: 100%; 
-                height: 100%; 
-                border: 5px solid #d4a017; 
-                background-color: #f8f0e3; 
-                z-index: 0; 
+            .carousel {
+              max-width: 400px;
+              max-height: 350px;
+              .swiper-wrapper {
+                height: 350px; // Fixe la hauteur de chaque slide
               }
-              h4{
-                text-align: center;
-                display: flex; 
+              .carousel__slide {
+                width: 100%;
+                height: 200px;
+                display: flex;
                 justify-content: center;
                 align-items: center;
-                padding: 30px;
-                background-color: var(--color-bg-secondary);
-                width: 250px;
-                height: 250px;
-                position: relative; 
-                border: 5px solid #4b3621; 
-                background-color: #f8f0e3; 
-                z-index: 1; 
-                margin: 0; 
-              }
+
+                
+                
+            }
+
+
+            .gallery {
+                height: 300px; // Ajustez cette valeur selon la hauteur souhaitée
+                width: 350px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                
+                img {
+                    width: 100%;
+                    max-height: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: 5%;
+                    // overflow-y: scroll;
+                }
+      
+            }
+
+            }
+      
+      
+          .card__box {
+            position: relative;
+            display: inline-block;
+            
+            
+          }
+          .h4__wrapper {
+            position: relative;
+            display: inline-block;
         }
-    }
+      
+          
+          .projet__shadow {
+            position: absolute;
+            top: -10%;
+            left: -10%;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            border: 5px solid #d4a017;
+            background-color: #f8f0e3;
+            z-index: 0;
+          }
+          h4 {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            background-color: var(--color-bg-secondary);
+            width: 400px;
+            height: 100px;
+            position: relative;
+
+            border: 5px solid #4b3621;
+            background-color: #f8f0e3;
+            z-index: 1;
+            margin: 0;
+          }
+        }
+      }
+      
 }

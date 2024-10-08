@@ -173,11 +173,14 @@
     gap: 10px;
     padding: 30px;
 
+    .key__container{
+       border: 3px solid var(--color-bg-primary); 
+    }
 
     .key{
         flex: auto;
         color: var(--color-primary);
-        border: 3px solid var(--color-bg-primary);
+        
         width: max-content;
         height: fit-content;
         padding: 10px;
@@ -216,6 +219,7 @@
             font-size: var(--font-size-h4);
         }
         .key--hidden{
+            opacity: 0;
             display: block;
         }
 
